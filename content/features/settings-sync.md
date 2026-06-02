@@ -17,6 +17,20 @@ Once enabled, any setting change you make is uploaded to your homeserver after a
 
 ![Settings sync panel showing the sync toggle, sync status, and export/import buttons](/img/settings-sync.png)
 
+# Device-Specific Settings
+
+Some settings are intentionally kept local to each device and are **not synced**:
+
+- **Notification permissions** — push, in-app, and system notification toggles
+- **Notification sounds** — sound preferences differ per device (e.g., desktop vs. mobile)
+- **Page zoom level** — display size preferences are device-specific
+- **Drawer visibility** — people drawer and widget drawer state
+- **Input behavior** — Enter key action (send vs. newline) varies by device type
+- **Developer tools** — experimental features stay local to development sessions
+- **Search index cache size** — storage limits differ per device
+
+This ensures that mobile-specific preferences (like disabling notification sounds to avoid media interruption) don't override your desktop settings, and vice versa.
+
 # Manual Backup and Restore
 
 The same settings section includes a **JSON export/import** area. You can:
